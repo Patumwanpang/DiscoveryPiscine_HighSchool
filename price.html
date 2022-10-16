@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>pangdow</title>
+</head>
+<style>
+    body{
+    background-color: rgb(72, 83, 244);
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: rgb(236, 138, 184);
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover:not(.active) {
+      background-color: rgb(129, 190, 147);
+    }
+    
+    .active {
+      background-color: hsl(158, 95%, 34%);
+    }
+</style>
+<body background="รูปภาพตัวเองสี่.jpg" > 
+  <ul>
+    <li><a href="pangdow.html">หน้าหลัก</a></li>
+    <li><a href="HWPP.html">หน้ากรอกข้อมูล</a></li>
+    <li><a href="price.html">คำนวณราคาของเล่น</a></li>
+    <li><a href="HWFN.html">เกมทายสี</a></li>
+  </ul> <h1>𝓬𝓪𝓵𝓬𝓾𝓵𝓪𝓽𝓮 𝓽𝓱𝓮 𝓹𝓻𝓲𝓬𝓮 𝓸𝓯 𝓽𝓸𝔂𝓼 </h1>
+	ราคาของเล่น		:<input id="num1"/> <br>
+ 	จำนวนของเล่น 	:<input id="num2"/> <br>
+ 	<button onclick="func()">คำนวณราคา</button> <br>
+	<p id="result">ราคารวมของของเล่น คือ ...... บาท</p> 
+
+ 	<script>
+    	function func(){
+			if(isNaN(document.getElementById("num1").value) || document.getElementById("num1").value == "" || document.getElementById("num1").value == "0")
+		 	{
+				alert('กรุณากรอกราคาของเล่นที่มากกว่า 0 ด้วยค่ะ !!!');
+				document.getElementById("num1").focus();
+				return;
+		 	}
+
+		 	if(isNaN(document.getElementById("num2").value) || document.getElementById("num2").value == "" || document.getElementById("num2").value == "0")
+		 	{
+				alert('กรุณากรอกจำนวนของเล่นที่มากกว่า 0 ด้วยค่ะ  !!!');
+				document.getElementById("num2").focus();
+				return;
+			 }
+          var num1 = Number(document.getElementById("num1").value);
+          var num2 = Number(document.getElementById("num2").value);
+          var result = num1 * num2;
+
+          document.getElementById("result").innerHTML = 'ราคารวมของของเล่น คือ '+result+' บาท';
+          }
+ 	</script>
+</body>
+</html>

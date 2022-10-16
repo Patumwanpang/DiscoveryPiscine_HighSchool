@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: rgb(236, 138, 184);
+        }
+        
+        li {
+          float: left;
+        }
+        
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        li a:hover:not(.active) {
+          background-color:hsl(158, 95%, 34%) ;
+        }
+        
+        .active {
+          background-color: #04AA6D;
+        }
+        </style>
+<head>
+    <meta charset="UTF0-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pangdow</title>
+    <link rel="stylesheet" href="stylehw2.css">
+</head>
+
+<body style="background-color:pink;"> 
+    <ul>
+        <li><a href="pangdow.html">หน้าหลัก</a></li>
+        <li><a href="HWPP.html">หน้ากรอกข้อมูล</a></li>
+        <li><a href="price.html">คำนวณราคาของเล่น</a></li>
+        <li><a href="HWFN.html">เกมทายสี</a></li>
+      </ul>
+    <h1>  𝓟𝓪𝓽𝓾𝓶𝔀𝓪𝓷 𝓟𝓪𝓷𝓰 🌼 </h1>
+    <img src="รูปภาพตัวเองสอง.png" height="165px" width="260px">
+    <fieldset>
+        <legend>ข้อมูลส่วนตัว</legend>
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        <legend>คำนำหน้า</legend>
+                    </td>
+                    <td>
+                        <select>
+                            <option value="0">----</option>
+                            <option value="1">ชาย</option>
+                            <option value="2">หญิง</option>
+                        </select>
+                    </td>
+                    <td>
+                        <legend>ชื่อจริง</legend>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="ชื่อจริง">
+                    </td>
+                    <td>
+                        <legend>นามสกุล</legend>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="นามสกุล">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <legend>อายุ</legend>
+                    </td>
+                    <td>
+                        <select>
+                            <option value="0">---</option>
+                            <option value="1">6</option>
+                            <option value="2">7</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <legend>Email</legend>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Email">
+                    </td>
+                    <td>
+                        <legend>Password</legend>
+                    </td>
+                    <td>
+                        <input type="password" placeholder="Password">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>ความสนใจ</legend>
+        <table>
+            <tr>
+                <td>
+                    <input type="checkbox" id="เขียนโปรแกรม" name="เขียนโปรแกรม" value="เขียนโปรแกรม">
+                    <label for="เขียนโปรแกรม"> เขียนโปรแกรม </label><br>
+                </td>
+                <td>
+                    <input type="checkbox" id="AI" name="AI" value="AI">
+                    <label for="AI"> AI </label><br>
+                </td>
+            </tr>
+        </table>
+        <textarea cols="30" rows="10"></textarea>
+    </fieldset>
+    <br />
+    <button class="btn-4">Submit</button>
+    <button class="btn-4">Reset</button>
+</body>
+
+</html>

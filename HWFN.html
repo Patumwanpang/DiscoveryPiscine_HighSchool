@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pangdow</title>
+</head>
+<style>
+    .anw{
+    font-size: 25px;
+}
+body{
+    background-color:pink;  ;
+}
+.color{    
+    font-size: 30px;
+}
+p{
+    font-size: 25px;
+}
+ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: rgb(236, 138, 184) ;
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover:not(.active) {
+      background-color: rgb(129, 190, 147);
+    }
+    
+    .active {
+      background-color: hsl(158, 95%, 34%);
+    }
+</style>
+
+<body>
+  <ul>
+    <li><a href="pangdow.html">หน้าหลัก</a></li>
+    <li><a href="HWPP.html">หน้ากรอกข้อมูล</a></li>
+    <li><a href="price.html">คำนวณราคาของเล่น</a></li>
+    <li><a href="HWFN.html">เกมทายสี</a></li>
+  </ul>
+    <center>
+        <button onclick="play()" style="margin-top: 50px; font-size: 20px;">Start</button>
+        <br><br>
+        <anw class="anw" id="anw"></anw>
+        <br><br>
+        <hr>
+        <table>
+            <tbody>
+                <tr>
+                    <th class="color" style="color: black;">_black_</th>
+                    <th class="color" style="color: red;">_red_</th>
+                    <th class="color" style="color: blue;">_blue_</th>
+                    <th class="color" style="color: green;">_green_</th>
+                    <th class="color" style="color: yellow;">_yellow_</th>
+                    <th class="color" style="color: orange;">_orange_</th>
+                    <th class="color" style="color: purple;">_purple_</th>
+                    <th class="color" style="color: rgb(219, 28, 136);">_pink_</th>
+                    <th class="color" style="color: gray;">_gray_</th>
+                    <th class="color" style="color: white;">_white_</th>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+    </center>
+    <p id="round"></p>
+    <p id="anwser"></p>
+    <p id="wrong"></p>
+    <p id="score"></p>
+    <script src="HWFN.js"></script>
+</body>
+
+</html>
